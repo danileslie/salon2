@@ -1,3 +1,4 @@
+@import '~/@glidejs/glide/dist/css/glide.core.min.css';
 
 /******************************************
 /* GENERAL STYLES
@@ -691,6 +692,13 @@ form textarea {
 
     .contact-us {
         grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 2rem;
+        border-radius: 10px;
+        margin: auto;
     }
 
     .text-item {

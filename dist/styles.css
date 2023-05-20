@@ -695,12 +695,7 @@ form textarea {
         grid-template-columns: 1fr;
     }
     
-    .contact-form{
-        width: 90%;
-padding: 2rem;
-border-radius: 10px;
-margin: auto;
-    }
+
     .text-item {
         grid-column: span 2;
     }
