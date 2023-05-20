@@ -11,15 +11,19 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         // publicPath: '/dist/',
     },
-        resolve: {
-          extensions: ['.json', '.js', '.jsx'],
-          modules: ['node_modules'],
-        },
+    resolve: {
+        extensions: ['.json', '.js', '.jsx'],
+        modules: ['node_modules'],
+    },
     module: {
         rules: [
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -32,5 +36,5 @@ module.exports = {
         template: 'src/index.html',
     })],
 
-    
+
 };
