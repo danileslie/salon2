@@ -1,3 +1,4 @@
+@import '~/@glidejs/glide/dist/css/glide.core.min.css';
 
 /******************************************
 /* GENERAL STYLES
@@ -26,6 +27,8 @@
 nav .navlist .navitem {
     cursor: pointer;
 }
+
+
 
 body,
 .header,
@@ -512,10 +515,6 @@ tr {
     border-radius: 10px;
 }
 
-.g-recaptcha div:first-child
-  {
-    margin: auto;
-  }
 label,
 input,
 textarea {
@@ -694,7 +693,13 @@ form textarea {
     .contact-us {
         grid-template-columns: 1fr;
     }
-    
+
+    .contact-form {
+        width: 90%;
+        padding: 2rem;
+        border-radius: 10px;
+        margin: auto;
+    }
 
     .text-item {
         grid-column: span 2;
