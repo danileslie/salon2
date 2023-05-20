@@ -9,9 +9,12 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/dist/',
+        // publicPath: '/dist/',
     },
-
+        resolve: {
+          extensions: ['.json', '.js', '.jsx'],
+          modules: ['node_modules'],
+        },
     module: {
         rules: [
             {
@@ -28,4 +31,6 @@ module.exports = {
         filename: 'index.html',
         template: 'src/index.html',
     })],
+
+    
 };
