@@ -1,4 +1,4 @@
-@import '~/@glidejs/glide/dist/css/glide.core.min.css';
+/* @import '~/@glidejs/glide/dist/css/glide.core.min.css'; */
 
 /******************************************
 /* GENERAL STYLES
@@ -27,8 +27,6 @@
 nav .navlist .navitem {
     cursor: pointer;
 }
-
-
 
 body,
 .header,
@@ -695,7 +693,7 @@ form textarea {
     }
 
     .contact-form {
-        width: 90%;
+        display: block;
         padding: 2rem;
         border-radius: 10px;
         margin: auto;

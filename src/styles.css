@@ -28,8 +28,6 @@ nav .navlist .navitem {
     cursor: pointer;
 }
 
-
-
 body,
 .header,
 .navlist,
@@ -695,7 +693,7 @@ form textarea {
     }
 
     .contact-form {
-        width: 90%;
+        display: block;
         padding: 2rem;
         border-radius: 10px;
         margin: auto;
