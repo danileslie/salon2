@@ -689,7 +689,7 @@ form textarea {
     }
 
     .contact-us {
-        grid-template-columns: 1fr;
+        display: block;
     }
 
     .contact-form {
