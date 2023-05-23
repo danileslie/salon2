@@ -103,14 +103,17 @@ h2,
     font-size: 3rem;
 }
 
-header a,
+/* header a,
 .phone-number,
 .email,
 .phone {
     font-size: 2rem;
-}
+} */
 
-footer a,
+header a,
+.phone-number,
+.email,
+.phone, footer a,
 .review,
 .detail-text,
 .serviceTable1,
