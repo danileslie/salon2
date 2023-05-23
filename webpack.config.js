@@ -5,6 +5,7 @@ const path = require('path');
 let pages = ['index', 'services', 'gallery', 'about', 'contact'];
 
 module.exports = {
+   
     entry: pages.reduce((config, page) => {
         config[page] = `./src/${page}.js`;
         return config;
@@ -12,7 +13,7 @@ module.exports = {
     output: {
         filename: '[name].js', 
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/dist/',
+        publicPath: 'dist/',
     },
     optimization: {
         splitChunks: {
@@ -43,17 +44,14 @@ module.exports = {
         pages.map(
           (page) =>
             new HtmlWebpackPlugin({
-              inject: true,
+            //   inject: true,
               template: `src/${page}.html`,
               filename: `${page}.html`,
               chunks: [page],
             })
         ),
     )
-    // plugins: [new HtmlWebpackPlugin({
-    //     filename: 'index.html',
-    //     template: 'src/index.html',
-    // })],
+
 
 
 };
