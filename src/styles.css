@@ -103,13 +103,6 @@ h2,
     font-size: 3rem;
 }
 
-/* header a,
-.phone-number,
-.email,
-.phone {
-    font-size: 2rem;
-} */
-
 header a,
 .phone-number,
 .email,
@@ -582,7 +575,7 @@ form textarea {
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1030px) {
 
     .header,
     .gallery,
@@ -709,9 +702,13 @@ form textarea {
 
 }
 
-@media (min-width: 1400px) and (max-width: 1719px) {
+@media (min-width: 1031px) and (max-width: 1400px) {
     .header {
-        width: 100%;
+        width: 90%;
+    }
+
+    ul li{
+        margin-right: 1rem;
     }
 
 }
