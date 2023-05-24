@@ -1,5 +1,3 @@
-
-
 /******************************************
 /* GENERAL STYLES
 /*******************************************/
@@ -22,9 +20,9 @@
     box-sizing: border-box;
 }
 
-/* test nav */
+/* NAVIGATION */
 
-nav .navlist .navitem {
+.navitem {
     cursor: pointer;
 }
 
@@ -47,6 +45,15 @@ body,
     display: flex;
 }
 
+.details,
+.gallery,
+.staff,
+.contact-us,
+.contact-form,
+.nav-toggle {
+    display: grid;
+}
+
 body {
     flex-direction: column;
     font-family: Cabin, sans-serif;
@@ -67,7 +74,8 @@ body {
 header,
 footer,
 .home-page-link,
-.submit {
+.submit,
+.glide__arrow:hover {
     background: var(--primary);
 }
 
@@ -106,7 +114,8 @@ h2,
 header a,
 .phone-number,
 .email,
-.phone, footer a,
+.phone,
+footer a,
 .review,
 .detail-text,
 .serviceTable1,
@@ -117,7 +126,8 @@ textarea,
 label,
 .blurb,
 .name,
-.about-name {
+.about-name,
+.glide__arrow {
     font-size: 1.5rem;
 }
 
@@ -249,15 +259,15 @@ ul li:last-child {
     display: block;
 }
 
-/* .glide__arrow {
-    position: absolute;
-    display: block;
-    top: 50%;
-    z-index: 2;
-    color: #364652;
+.glide__arrow {
+    color: var(--primary);
     padding: 2rem;
-    border: 2px solid #364652;
-} */
+    border: 2px solid var(--primary);
+}
+
+.glide__arrow:hover {
+    color: var(--accent)
+}
 
 .carousel-container {
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -311,7 +321,6 @@ h2 {
 }
 
 .details {
-    display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 50%);
     grid-auto-flow: dense;
@@ -384,7 +393,6 @@ tr {
 /* GALLERY */
 
 .gallery {
-    display: grid;
     gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: dense;
@@ -454,7 +462,6 @@ tr {
 }
 
 .staff {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin: auto;
@@ -480,7 +487,6 @@ tr {
 /* CONTACT */
 
 .contact-us {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 2% auto;
@@ -500,7 +506,6 @@ tr {
 }
 
 .contact-form {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: auto;
@@ -619,19 +624,6 @@ form textarea {
         transition: 0.6s;
     }
 
-    .navitem {
-        margin: 0;
-        padding: 1rem;
-        border-bottom: 1px solid var(--secondary);
-    }
-
-    .navitem:last-child {
-        border-bottom: none;
-    }
-
-    .nav-toggle {
-        display: grid;
-    }
 
     .carousel-container {
         display: none;
@@ -707,9 +699,9 @@ form textarea {
         width: 90%;
     }
 
-    ul li{
-        margin-right: 1rem; 
-    /* nb */
+    ul li {
+        margin-right: 1rem;
+        /* nb */
     }
 
 }

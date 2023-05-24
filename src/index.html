@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='../src/styles.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet">
-      <link rel="stylesheet" type='text/css' href="./assets/styles.css">
+      
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" type='text/css' href="./assets/styles.css">
     <title>Lock-In Salon</title>
   </head>
 
@@ -59,7 +59,7 @@
           <div class="glide__arrows" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
               &#60;&#60;</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#62;&#62;</button>
           </div>
           <div class="glide__bullets" data-glide-el="controls[nav]">
             <button class="glide__bullet" data-glide-dir="=0"></button>
@@ -69,46 +69,42 @@
         </div>
       </section>
       <h1>Welcome to Lock In Salon</h1>
-      <section class='details grid'>
-        <article class='services-home square'>
+      <section class='details'>
+        <article class='square'>
           <picture>
             <source srcset='../images/home-nav/tim-mossholder-SxPISzSxJrQ-unsplash-l.jpg' media='(min-width: 2000px)'>
             <source srcset='../images/home-nav/tim-mossholder-SxPISzSxJrQ-unsplash-m.jpg' media='(min-width: 1440px)'>
             <img src="../images/home-nav/tim-mossholder-SxPISzSxJrQ-unsplash-s.jpg" class='services-img' alt=""
               loading=“lazy” decoding=“async”>
           </picture>
-          <!-- <p class='detail-text'>There's nothing we want more than for you to look and feel your best. Here at Lock-In, we pride ourselves on the quality of the service that we deliver.</p> -->
           <a class='home-page-link' href='services.html'>view our services ></a>
         </article>
 
-        <article class='lookbook-home square'>
+        <article class='square'>
           <picture>
             <source srcset='../images/home-nav/allef-vinicius-IvQeAVeJULw-unsplash-l.jpg' media='(min-width: 2000px)'>
             <source srcset='../images/home-nav/allef-vinicius-IvQeAVeJULw-unsplash-m.jpg' media='(min-width: 1440px)'>
             <img src="../images/home-nav/allef-vinicius-IvQeAVeJULw-unsplash-s.jpg" class='services-img' alt=""
               loading=“lazy” decoding=“async”>
           </picture>
-          <!-- <p class='detail-text'>Arranging in colours from the natural to the pastels, our technicians have the skill to both give you what you want for your hair, and help you maintain it afterwards. A gallery for those who want to see what we can really do.</p> -->
           <a class='home-page-link' href='lookbook.html'>view our gallery ></a>
         </article>
-        <article class='about-home square'>
+        <article class='square'>
           <picture>
             <source srcset='../images/home-nav/adam-winger-KVVjmb3IIL8-unsplash-l.jpg' media='(min-width: 2000px)'>
             <source srcset='../images/home-nav/adam-winger-KVVjmb3IIL8-unsplash-m.jpg' media='(min-width: 1440px)'>
             <img src="../images/home-nav/adam-winger-KVVjmb3IIL8-unsplash-s.jpg" class='services-img' alt="" loading=“lazy”
               decoding=“async”>
           </picture>
-          <!-- <p class='detail-text'>We came from humble beginnings, and grew into a business that could be counted on in the community when it comes to hair styling and hair care. Care to see how we got ourselves started?</p> -->
           <a class='home-page-link' href='about.html'>about us ></a>
         </article>
-        <article class='contact-home square'>
+        <article class='square'>
           <picture>
             <source srcset='../images/home-nav/adam-winger-fI-TKWjKYls-unsplash-l.jpg' media='(min-width: 2000px)'>
             <source srcset='../images/home-nav/adam-winger-fI-TKWjKYls-unsplash-m.jpg' media='(min-width: 1440px)'>
             <img src="../images/home-nav/adam-winger-fI-TKWjKYls-unsplash-s.jpg" class='services-img' alt="" loading=“lazy”
               decoding=“async”>
           </picture>
-          <!-- <p class='detail-text'>How and where do you get in contact with us?</p> -->
           <a class='home-page-link' href='contact.html'>contact us ></a>
         </article>
       </section>
@@ -123,7 +119,6 @@
                 quality of the service has been impeccable. I highly recommend this place for making you
                 feel
                 welcome and pampered.</p>
-
               <p class='name'>- Lori</p>
             </article>
             <article class='testimonial col'>
@@ -179,5 +174,4 @@
     </script>
     <script src="index.js"></script>
   </body>
-
   </html>
