@@ -150,12 +150,9 @@ label,
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
 }
 
-.header{
-    height: 35px;
-}
 .footer {
     margin-bottom: 1rem;
 }
@@ -632,8 +629,8 @@ form textarea {
         display: block;
     }
 
-    ul li:last-child{
-        margin-right: 5rem;
+    ul li{
+        margin-right: 0;
     }
     .carousel-container {
         display: none;
@@ -658,6 +655,9 @@ form textarea {
         display: none;
     }
 
+    .caption{
+        font-size: 2rem;
+    }
     .gallery,
     .staff {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

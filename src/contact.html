@@ -58,23 +58,20 @@
             <form class='contact-form' name='contact' method='POST' netlify>
                 <div class='text-item'>
                     <label for='name'>Name </label>
-                    <input type='text' name='name' id='name'>
+                    <input type='text' name='name' id='name' required>
                 </div>
                 <div class='text-item'>
                     <label for='email'>E-mail</label>
-                    <input type='text' name='email' id='email'>
+                    <input type='text' name='email' id='email'required>
                 </div>
 
                 <div class='full-width'>
                     <label for='subject' name='subject'>Subject </label>
-                    <input type='text' name='subject' id='subject'>
+                    <input type='text' name='subject' id='subject'required>
                 </div>
                 <div class='full-width'>
                     <label for='message'>Message </label>
-                    <textarea name='message' id='message' rows='10'></textarea>
-                </div>
-                <div class='captcha'>
-                    <div data-netlify-recaptcha="true">
+                    <textarea name='message' id='message' rows='10' required></textarea>
                 </div>
                 <button class='submit'>Submit</button>
             </form>
