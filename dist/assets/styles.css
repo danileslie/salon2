@@ -116,7 +116,7 @@ header a,
 .email,
 .phone,
 footer a,
-.review,
+
 .detail-text,
 .serviceTable1,
 .contact-info,
@@ -133,7 +133,7 @@ label,
 
 .home-page-link,
 .position,
-.copyright p {
+.copyright p, .review {
     font-size: 1rem;
 }
 
@@ -438,7 +438,7 @@ tr {
 .about-blurb {
     flex-direction: column;
     justify-content: center;
-    padding: 2%;
+    padding: 1.5rem;
 }
 
 .title,
@@ -500,6 +500,7 @@ tr {
 
 .contact-info {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .contact {
@@ -576,6 +577,7 @@ form textarea {
 .map {
     display: block;
     height: 100%;
+    margin-bottom: 1rem;
 }
 
 /******************************************
@@ -595,7 +597,6 @@ form textarea {
     .serviceTable1 {
         width: 100%;
         margin: auto;
-        text-align: center;
     }
 
     .phone-number {
